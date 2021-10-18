@@ -7,24 +7,18 @@ from tflearn.activations import relu
 
 def weight_variable(shape):
     """
-    权重变量
     :param shape:
     :return:
     """
-    # truncated_normal -> 截尾正态分布
-    # stddev -> 截断正态分布的标准差
+    # truncated_normal
+    # stddev
     initial = tf.truncated_normal(shape, stddev=0.1, dtype=tf.float32)
     # tf.Variable()说明
-    # 创建一个值initial_value的新变量。
-    # 新变量被添加到collections中列出的图集合中，默认值为[GraphKeys.GLOBAL_VARIABLES]。
-    # 如果trainable为True，则该变量也会添加到图形集合GraphKeys.TRAINABLE_VARIABLES中。
-    # 这个构造函数创建变量Op和赋值Op，以将变量设置为初始值。
     return tf.Variable(initial, dtype=tf.float32)
 
 
 def bias_variable(shape):
     """
-    偏差变量
     :param shape:
     :return:
     """
@@ -34,7 +28,6 @@ def bias_variable(shape):
 
 def a_layer(x, units):
     """
-    单层
     :param x:
     :param units:
     :return:
@@ -47,11 +40,10 @@ def a_layer(x, units):
 
 def bi_layer(x0, x1, sym, dim_pred):
     """
-    双层
     :param x0:
     :param x1:
     :param sym:
-    :param dim_pred:项目矩阵维度
+    :param dim_pred:
     :return:
     """
     if not sym:
