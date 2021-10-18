@@ -1,7 +1,7 @@
 ==# NeoDTI
 NeoDTI: Neural integration of neighbor information from a heterogeneous network for discovering new drug-target interactions [(Bioinformatics)](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty543/5047760).
 
-# Recent Update 09/06/2018
+# Recent Update 10/18/2021
 L2 regularization is added.
 
 # Requirements
